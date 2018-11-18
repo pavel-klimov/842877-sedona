@@ -3,12 +3,11 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
-
 }
 
 .wrap {
@@ -46,7 +45,6 @@ body {
   width: 239px;
   margin: 22px 72px;
   color: #000000;
-  font-family: "PT Sans";
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -55,7 +53,7 @@ body {
 }
 
 .main__welcom-screen {
-  background: url(../img/main__welcome-bg.jpg) center bottom no-repeat;
+  background: #7b90ba url(../img/main__welcome-bg.jpg) center bottom no-repeat;
   background-size: 100%;
 }
 
@@ -81,11 +79,11 @@ body {
   background-size: cover;
 }
 
-.main-town-header, .main-town-description {
+.town-description__header, .town-description__text {
   width: 500px;
   margin: 0 auto;
 }
-.main-town-header {
+.town-description__header {
   padding: 5px 0 30px;
 }
 .regular-header {
@@ -127,6 +125,7 @@ body {
 }
 .main__card-with-picture {
   flex: 800px;
+  background-color: #dba088;
 }
 
 .main__card-with-picture img {
