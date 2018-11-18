@@ -4,19 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrap">
     <header class="header">
       <nav>
-        <a href="./index.html"><img src="http://placehold.it/140x72" title="Главная страница" alt="Логотип сайта City of Sedona"></a>
-        <ul class="header__navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="./catalog.html">Гостиницы</a></li>
-        </ul>
+        <a class="header__logo" href="./index.html"><img src="./img/logo.png" title="Главная страница" alt="Логотип сайта City of Sedona"></a>
+        <div class="header__navigation">
+          <div class="header__navigation-group"><a href="#">Информация</a>
+            <a href="#">Фото и Видео</a></div>
+          <div class="header__navigation-group"><a href="#">Карта штата</a>
+            <a href="./catalog.html">Гостиницы</a></div>
+        </div>
       </nav>
     </header>
     <aside class="selecting">

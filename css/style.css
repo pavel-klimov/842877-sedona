@@ -1,0 +1,135 @@
+body {
+  background-color: #f2f2f2;
+  padding: 0;
+  margin: 0;
+
+  font-family: "PT Sans";
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+
+}
+
+.wrap {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 70px);
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__navigation-group {
+  padding: 15px 0;
+}
+.header__navigation-group a {
+  width: 239px;
+  margin: 22px 72px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main__welcom-screen {
+  background: url(../img/main__welcome-bg.jpg) center bottom no-repeat;
+  background-size: 100%;
+}
+
+.main__welcom-screen img {
+  margin-top: 135px;
+}
+
+.main__town-description {
+  position: relative;
+  background-color: #ffffff;
+  margin-top: 70px;
+  padding: 56px 0;
+}
+
+.main__town-description::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -59px;
+  width: 100%;
+  height: 60px;
+  background: url(../img/polygon.png) center bottom no-repeat;
+  background-size: cover;
+}
+
+.main-town-header, .main-town-description {
+  width: 500px;
+  margin: 0 auto;
+}
+.main-town-header {
+  padding: 5px 0 30px;
+}
+.regular-header {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+}
+
+.main__card-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.main__card {
+  box-sizing: border-box;
+  padding: 45px 60px;
+  height: 256px;
+  flex: 400px;
+  background-color: #eeeeee;
+}
+
+.main__card_accent, .main__card_accent .regular-header {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.main__card_with-icon {
+  height: 330px;
+  background-color: #ffffff;
+}
+
+.main__card_with-icon img {
+  margin: 15px 0 30px;
+}
+.main__card .regular-header {
+  width: 151px;
+  margin: 0 auto;
+}
+.main__card-with-picture {
+  flex: 800px;
+}
+
+.main__card-with-picture img {
+  display: block;
+}
+

@@ -4,75 +4,78 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrap">
     <header class="header">
       <nav>
-        <a href="./index.html"><img src="http://placehold.it/140x72" title="Главная страница" alt="Логотип сайта City of Sedona"></a>
-        <ul class="header__navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="./catalog.html">Гостиницы</a></li>
-        </ul>
+        <a class="header__logo" href="./index.html"><img src="./img/logo.png" title="Главная страница" alt="Логотип сайта City of Sedona"></a>
+        <div class="header__navigation">
+          <div class="header__navigation-group"><a href="#">Информация</a>
+            <a href="#">Фото и Видео</a></div>
+          <div class="header__navigation-group"><a href="#">Карта штата</a>
+            <a href="./catalog.html">Гостиницы</a></div>
+        </div>
       </nav>
     </header>
     <main class="main">
       <section class="main__welcom-screen">
-        <img src="http://placehold.it/459x353" title="Welcome to the gorgeous. Sedona Because the Grand Canyon sucks!"
-          alt="Текст: Welcome to the gorgeous. Sedona Because the Grand Canyon sucks!">
+        <img src="./img/welcome.png" title="Welcome to the gorgeous. Sedona Because the Grand Canyon sucks!" alt="Текст: Welcome to the gorgeous. Sedona Because the Grand Canyon sucks!">
+        <section class="main__town-description">
+          <p class="regular-header main-town-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="main-town-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </section>
       </section>
-      <section class="main__town-description">
-        <p class="regular-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </section>
-      <section class="main__cald main__cald_accent">
-        <h2 class="regular-header">Настоящий городок</h2>
-        <p>— №1 —</p>
-        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-      </section>
-      <section class="main__cald-with-picture">
-        <img src="http://placehold.it/800x256" alt="Уютная веранда с видом на горный пецзаж">
-      </section>
-      <section class="main__cald main__cald_with-icon">
-        <img src="http://placehold.it/75x72" alt="Схематичное изображение дома">
-        <h2 class="regular-header">Жильё</h2>
-        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-      </section>
-      <section class="main__cald main__cald_with-icon">
-        <img src="http://placehold.it/74x70" alt="Схематичное изображение гамбургера">
-        <h2 class="regular-header">Еда</h2>
-        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-      </section>
-      <section class="main__cald main__cald_with-icon">
-        <img src="http://placehold.it/64x76" alt="Схематичное изображение подарка">
-        <h2 class="regular-header">Сувениры</h2>
-        <p>Не только китайского, но и местного производства!</p>
-      </section>
-      <section class="main__cald-with-picture">
-        <img src="http://placehold.it/800x256" alt="Виды гор и ростительности">
-      </section>
-      <section class="main__cald main__cald_accent">
-        <h2 class="regular-header">Там есть Мост дьявола</h2>
-        <p>— №2 —</p>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-      </section>
-      <section class="main__cald">
-        <h2 class="regular-header">Небольшая площадь</h2>
-        <p>— №3 —</p>
-        <p>Все достопримечательности находятся очень близко</p>
-      </section>
-      <section class="main__cald">
-        <h2 class="regular-header">Красивая дорога</h2>
-        <p>— №4 —</p>
-        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </section>
-      <section class="main__cald">
-        <h2 class="regular-header">Мало туристов</h2>
-        <p>— №5 —</p>
-        <p>Большинство едет в гранд каньон и толпится там</p>
+      <section class="main__card-group">
+        <section class="main__card main__card_accent">
+          <h2 class="regular-header">Настоящий городок</h2>
+          <p>— №1 —</p>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </section>
+        <section class="main__card-with-picture">
+          <img src="./img/Layer_10.jpg" width="800" height="256" alt="Уютная веранда с видом на горный пецзаж">
+        </section>
+        <section class="main__card main__card_with-icon">
+          <img src="./img/icon-1.png" width="75" height="72" alt="Схематичное изображение дома">
+          <h2 class="regular-header">Жильё</h2>
+          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </section>
+        <section class="main__card main__card_with-icon">
+          <img src="./img/icon-3.png" width="74" height="70" alt="Схематичное изображение гамбургера">
+          <h2 class="regular-header">Еда</h2>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </section>
+        <section class="main__card main__card_with-icon">
+          <img src="./img/icon-2.png" width="64" height="76" alt="Схематичное изображение подарка">
+          <h2 class="regular-header">Сувениры</h2>
+          <p>Не только китайского, но и местного производства!</p>
+        </section>
+        <section class="main__card-with-picture">
+          <img src="./img/Layer_5.jpg" width="800" height="256" alt="Виды гор и ростительности">
+        </section>
+        <section class="main__card main__card_accent">
+          <h2 class="regular-header">Там есть Мост дьявола</h2>
+          <p>— №2 —</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </section>
+        <section class="main__card">
+          <h2 class="regular-header">Небольшая площадь</h2>
+          <p>— №3 —</p>
+          <p>Все достопримечательности находятся очень близко</p>
+        </section>
+        <section class="main__card">
+          <h2 class="regular-header">Красивая дорога</h2>
+          <p>— №4 —</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </section>
+        <section class="main__card">
+          <h2 class="regular-header">Мало туристов</h2>
+          <p>— №5 —</p>
+          <p>Большинство едет в гранд каньон и толпится там</p>
+        </section>
       </section>
       <section class="main__for-interested">
         <p class="big-header">Заинтересовались?</p>
