@@ -4,19 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="./css/normalize.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrap">
     <header class="header">
       <nav>
-        <a href="./index.html"><img src="http://placehold.it/140x72" title="Главная страница" alt="Логотип сайта City of Sedona"></a>
-        <ul class="header__navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="./catalog.html">Гостиницы</a></li>
-        </ul>
+        <a class="header__logo" href="./index.html"><img src="./img/logo-sedona.svg" width="140" height="72" title="Главная страница" alt="Логотип сайта City of Sedona"></a>
+        <div class="header__navigation">
+          <div class="header__navigation-group"><a href="#">Информация</a>
+            <a href="#">Фото и Видео</a></div>
+          <div class="header__navigation-group"><a href="#">Карта штата</a>
+            <a href="./catalog.html">Гостиницы</a></div>
+        </div>
       </nav>
     </header>
     <aside class="selecting">
@@ -41,7 +44,7 @@
     <main class="catalog">
       <article class="catalog__item item">
         <div class="item__image">
-          <img src="http://placehold.it/140x72" alt="">
+          <img src="./img/Layer_21.jpg" width="135" height="90" alt="">
         </div>
         <div class="item__description">
           <h2 class="item__title">Amara Resort & Spa</h2>
@@ -60,17 +63,17 @@
         </div>
         <div class="item__marks">
           <p class="item__grade">
-            <img src="http://placehold.it/18x17" alt="Звезда">
-            <img src="http://placehold.it/18x17" alt="Звезда">
-            <img src="http://placehold.it/18x17" alt="Звезда">
-            <img src="http://placehold.it/18x17" alt="Звезда">
+            <img src="./img/star.svg" width="18" height="18" alt="Звезда">
+            <img src="./img/star.svg" width="18" height="18" alt="Звезда">
+            <img src="./img/star.svg" width="18" height="18" alt="Звезда">
+            <img src="./img/star.svg" width="18" height="18" alt="Звезда">
           </p>
           <p class="item__rating">Рейтинг: 8,5</p>
         </div>
       </article>
       <article class="catalog__item item">
         <div class="item__image">
-          <img src="http://placehold.it/140x72" alt="">
+          <img src="./img/Layer_89_copy.jpg" width="135" height="90" alt="">
         </div>
         <div class="item__description">
           <h2 class="item__title">Desert Quail Inn</h2>
@@ -89,16 +92,16 @@
         </div>
         <div class="item__marks">
           <p class="item__grade">
-            <img src="http://placehold.it/18x17" alt="Звезда">
-            <img src="http://placehold.it/18x17" alt="Звезда">
-            <img src="http://placehold.it/18x17" alt="Звезда">
+            <img src="./img/star.svg" width="18" height="18" alt="Звезда">
+            <img src="./img/star.svg" width="18" height="18" alt="Звезда">
+            <img src="./img/star.svg" width="18" height="18" alt="Звезда">
           </p>
           <p class="item__rating">Рейтинг: 8,9</p>
         </div>
       </article>
       <article class="catalog__item item">
         <div class="item__image">
-          <img src="http://placehold.it/140x72" alt="">
+          <img src="./img/Layer_22.jpg" width="135" height="90" alt="">
         </div>
         <div class="item__description">
           <h2 class="item__title">Villas at Poco Diablo</h2>
@@ -117,8 +120,8 @@
         </div>
         <div class="item__marks">
           <p class="item__grade">
-            <img src="http://placehold.it/18x17" alt="Звезда">
-            <img src="http://placehold.it/18x17" alt="Звезда">
+            <img src="./img/star.svg" width="18" height="18" alt="Звезда">
+            <img src="./img/star.svg" width="18" height="18" alt="Звезда">
           </p>
           <p class="item__rating">Рейтинг: 9,2</p>
         </div>
@@ -132,13 +135,13 @@
         <ul>
           <li class="social-link social-link_twitter"><a>twitter</a></li>
           <li class="social-link social-link_facebook"><a>facebook</a></li>
-          <li class="social-link social-link_yotebe"><a>youtube</a></li>
+          <li class="social-link social-link_youtube"><a>youtube</a></li>
         </ul>
       </section>
       <section class="footer__copyright">
-        <a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
           <span>Website by</span>
-          <img src="http://placehold.it/115x41" alt="html academy">
+          <img src="./img/logo-htmlacademy.svg" width="115" height="41" alt="html academy">
         </a>
       </section>
     </footer>
