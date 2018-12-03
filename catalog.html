@@ -27,23 +27,27 @@
       <section class="selecting__form">
         <h2 class="visuallyhidden">Фильтрация гостиниц</h2>
         <form action="https://echo.htmlacademy.ru" method="POST">
-          <section>
-            <h3>Инфраструктура:</h3>
-            <label><input type="checkbox" name="infrastructure_pool" checked> Бассейн</label>
-            <label><input type="checkbox" name="infrastructure_parking"> Парковка</label>
-            <label><input type="checkbox" name="infrastructure_wifi"> Wi-Fi</label>
-          </section>
-          <section>
-            <h3>Тип жилья:</h3>
-            <label><input type="checkbox" name="type_hotel" checked> Гостиница</label>
-            <label><input type="checkbox" name="type_motel" checked> Мотель</label>
-            <label><input type="checkbox" name="type_apartments" checked> Апартаменты</label>
-          </section>
-          <section>
-            <h3>Стоимость в сутки (Р):</h3>
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li><label><input type="checkbox" name="infrastructure_pool" checked> Бассейн</label></li>
+              <li><label><input type="checkbox" name="infrastructure_parking"> Парковка</label></li>
+              <li><label><input type="checkbox" name="infrastructure_wifi"> Wi-Fi</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li><label><input type="checkbox" name="type_hotel" checked> Гостиница</label></li>
+              <li><label><input type="checkbox" name="type_motel" checked> Мотель</label></li>
+              <li><label><input type="checkbox" name="type_apartments" checked> Апартаменты</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
             <label>От <input type="number" name="cost_from" value="0"></label>
             <label>До <input type="number" name="cost_to" value="3000"></label>
-          </section>
+          </fieldset>
           <button>Показать</button>
         </form>
       </section>
