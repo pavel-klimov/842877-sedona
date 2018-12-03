@@ -35,7 +35,6 @@ body {
 }
 
 .header {
-  position: absolute;
   width: 100%;
   background-color: #ffffff;
 }
@@ -74,7 +73,7 @@ body {
 }
 
 .main__welcom-screen img {
-  margin-top: 135px;
+  margin-top: 80px;
 }
 
 .main__town-description {
@@ -103,6 +102,7 @@ body {
   padding: 5px 0 30px;
 }
 .regular-header {
+  padding-bottom: 21px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -117,7 +117,6 @@ body {
 .main__card {
   box-sizing: border-box;
   padding: 45px 60px;
-  height: 256px;
   width: 400px;
   background-color: #eeeeee;
 }
@@ -128,8 +127,22 @@ body {
 }
 
 .main__card_with-icon {
-  height: 330px;
   background-color: #ffffff;
+  background-position: center 60px;
+  background-repeat: no-repeat;
+  padding-top: 160px;
+}
+
+.main__card_with-icon_home {
+  background-image: url(../img/icon-1.svg);
+}
+
+.main__card_with-icon_food {
+  background-image: url(../img/icon-3.svg);
+}
+
+.main__card_with-icon_gift {
+  background-image: url(../img/icon-2.svg);
 }
 
 .main__card_with-icon img {

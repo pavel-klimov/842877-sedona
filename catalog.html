@@ -12,6 +12,7 @@
 <body>
   <div class="wrap">
     <header class="header">
+      <h1 class="visuallyhidden">Каталог гостниц города Седона</h1>
       <nav>
         <a class="header__logo" href="./index.html"><img src="./img/logo-sedona.svg" width="140" height="72" title="Главная страница" alt="Логотип сайта City of Sedona"></a>
         <div class="header__navigation">
@@ -23,6 +24,29 @@
       </nav>
     </header>
     <aside class="selecting">
+      <section class="selecting__form">
+        <h2 class="visuallyhidden">Фильтрация гостиниц</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <section>
+            <h3>Инфраструктура:</h3>
+            <label><input type="checkbox" name="infrastructure_pool" checked> Бассейн</label>
+            <label><input type="checkbox" name="infrastructure_parking"> Парковка</label>
+            <label><input type="checkbox" name="infrastructure_wifi"> Wi-Fi</label>
+          </section>
+          <section>
+            <h3>Тип жилья:</h3>
+            <label><input type="checkbox" name="type_hotel" checked> Гостиница</label>
+            <label><input type="checkbox" name="type_motel" checked> Мотель</label>
+            <label><input type="checkbox" name="type_apartments" checked> Апартаменты</label>
+          </section>
+          <section>
+            <h3>Стоимость в сутки (Р):</h3>
+            <label>От <input type="number" name="cost_from" value="0"></label>
+            <label>До <input type="number" name="cost_to" value="3000"></label>
+          </section>
+          <button>Показать</button>
+        </form>
+      </section>
       <section class="sorting">
         <div class="sorting__count">
           <span>
@@ -31,13 +55,13 @@
         </div>
         <div class="sorting__type-selector">
           <span>Сортировка:</span>
-          <button class="sorting__type sorting__type_active">По цене</button>
-          <button class="sorting__type">По типу</button>
-          <button class="sorting__type">По рейтингу</button>
+          <a href="#" class="sorting__type sorting__type_active">По цене</a>
+          <a href="#" class="sorting__type">По типу</a>
+          <a href="#" class="sorting__type">По рейтингу</a>
         </div>
         <div class="sorting__order-group">
-            <button class="sorting__order sorting__order_up">От меньшего</button>
-            <button class="sorting__order sorting__order_down">От большего</button>
+            <a href="#" class="sorting__order sorting__order_up">От меньшего</a>
+            <a href="#" class="sorting__order sorting__order_down">От большего</a>
         </div>
       </section>
     </aside>
@@ -57,7 +81,7 @@
             </span>
           </p>
           <p>
-            <a class="item__more-information">Подробнее</a>
+            <a href="#" class="item__more-information">Подробнее</a>
             <button class="item__reservation">Забронировать</button>
           </p>
         </div>
@@ -86,7 +110,7 @@
             </span>
           </p>
           <p>
-            <a class="item__more-information">Подробнее</a>
+            <a href="#" class="item__more-information">Подробнее</a>
             <button class="item__reservation">Забронировать</button>
           </p>
         </div>
@@ -114,7 +138,7 @@
             </span>
           </p>
           <p>
-            <a class="item__more-information">Подробнее</a>
+            <a href="#" class="item__more-information">Подробнее</a>
             <button class="item__reservation">Забронировать</button>
           </p>
         </div>
