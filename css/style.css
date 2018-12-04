@@ -167,6 +167,12 @@ body {
   background-color: rgba(255,255,255,0.9);
 }
 
+.footer__hashtag {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
 .footer__social-link {
   letter-spacing: 6px;
 }

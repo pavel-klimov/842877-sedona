@@ -83,11 +83,37 @@
       <section class="main__search">
         <button class="main__search-button">ПОИСК ГОСТИНИЦЫ В седоне</button>
         <form class="main__reservation-form" action="https://echo.htmlacademy.ru" method="POST">
-          <p><label>Дата заезда: <input name="checkin" type="text" placeholder="24 апреля 2017"></label></p>
-          <p><label>Дата выезда: <input name="checkout" type="text" placeholder="4 июля 2017"></label></p>
           <p>
-            <label>Взрослые:<input name="adults" type="number" value="2"></label>
-            <label>Дети:<input name="children" type="number" value="0"></label>
+            <label for="main_checkin">Дата заезда:</label>
+            <div class="form__date">
+              <input id="main_checkin" name="checkin" type="text" placeholder="24 апреля 2017">
+              <button class="form__date-button" type=button>
+                <span class="visuallyhidden">Открыть календарь</span>
+              </button>
+            </div>
+          </p>
+          <p>
+            <label for="main_checkout">Дата выезда:</label>
+            <div class="form__date"></div>
+              <input id="main_checkout" name="checkout" type="text" placeholder="4 июля 2017">
+              <button class="form__date-button" type=button>
+                <span class="visuallyhidden">Открыть календарь</span>
+              </button>
+            </div>
+          </p>
+          <p>
+            <label for="main_adults">Взрослые:</label>
+            <div>
+                <button type=button><span class="visuallyhidden">Меньше</span></button>
+                <input id="main_adults" name="adults" type="number" value="2">
+                <button type=button><span class="visuallyhidden">Больше</span></button>
+              </div>
+            <label for="main_children">Дети:</label>
+            <div>
+              <button type=button><span class="visuallyhidden">Меньше</span></button>
+              <input id="main_children" name="children" type="number" value="0">
+              <button type=button><span class="visuallyhidden">Больше</span></button>
+            </div>
           </p>
           <p>
             <button type="submit">Найти</button>
