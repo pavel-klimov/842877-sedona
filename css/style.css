@@ -57,7 +57,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding: 0;
+  padding: 0 72px;
   margin: 0;
 }
 
@@ -65,28 +65,36 @@ body {
   padding: 15px 0;
 }
 
-.header__navigation-group a {
+.header__navigation-link {
   width: 239px;
-  margin: 22px 72px;
-  color: #000000;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-decoration: none;
+  flex-grow: 1;
+  margin: 15px 0;
+  text-align: left;
 }
 
-.header__navigation-group a:hover,
-.header__navigation-group a:focus {
+.header__navigation-link:nth-child(3),
+.header__navigation-link:nth-child(4) {
+  text-align: right;
+}
+
+.header__navigation-link a {
+  color: #000000;
+  line-height: 26px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.header__navigation-link a:hover,
+.header__navigation-link a:focus {
   color: #81b3d2;
 }
 
-.header__navigation-group a:active {
+.header__navigation-link a:active {
   opacity: 0.3;
   color: #000000;
 }
 
-.header__navigation-group a:not([href]) {
+.header__navigation-link a:not([href]),
+.header__logo:not([href]) {
   color: #766357;
   cursor: pointer;
 }
@@ -244,6 +252,7 @@ body {
 
 .main__reservation-form {
   position: absolute;
+  z-index: 2;
   background: #ffffff;
   left: 50%;
   transform: translate(-50%, 0px);
@@ -298,6 +307,18 @@ body {
   animation-direction: alternate;
 }
 
+.main__map {
+  position: relative;
+}
+
+.main__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: none;
+}
+
 .main__map img {
   margin-bottom: -4px;
 }
@@ -307,15 +328,19 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  justify-content: space-around;
+  min-height: 120px;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255,255,255,0.9);
 }
 
 .footer__hashtag {
-  padding: 25px 0 0 31px;
+  flex-grow: 1;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  margin: 0;
 }
 
 .footer__social-link ul {
@@ -323,12 +348,14 @@ body {
 }
 
 .footer__social-link {
-  padding: 36px 0 32px 17px;
+  flex-grow: 1;
   letter-spacing: 2px;
+  margin: 0;
 }
 
 .footer__copyright {
-  padding: 39px 0 0 28px;
+  flex-grow: 1;
+  margin: 0;
 }
 
 .social-link {
