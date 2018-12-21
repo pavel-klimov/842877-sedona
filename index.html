@@ -86,7 +86,7 @@
           <p>
             <label for="main_checkin">Дата заезда:</label>
             <span class="form__date">
-              <input id="main_checkin" name="checkin" type="text" placeholder="24 апреля 2017">
+              <input id="main_checkin" name="checkin" type="text" placeholder="24 апреля 2017" required>
               <button class="form__date-button" type=button>
                 <span class="visually-hidden">Открыть календарь</span>
               </button>
@@ -95,7 +95,7 @@
           <p>
             <label for="main_checkout">Дата выезда:</label>
             <span class="form__date">
-              <input id="main_checkout" name="checkout" type="text" placeholder="4 июля 2017">
+              <input id="main_checkout" name="checkout" type="text" placeholder="4 июля 2017" required>
               <button class="form__date-button" type=button>
                 <span class="visually-hidden">Открыть календарь</span>
               </button>
@@ -105,13 +105,13 @@
             <label for="main_adults">Взрослые:</label>
             <span>
               <button type=button><span class="visually-hidden">Меньше</span></button>
-              <input id="main_adults" name="adults" type="number" value="2">
+              <input id="main_adults" name="adults" type="number" value="2" required>
               <button type=button><span class="visually-hidden">Больше</span></button>
             </span>
             <label for="main_children">Дети:</label>
             <span>
               <button type=button><span class="visually-hidden">Меньше</span></button>
-              <input id="main_children" name="children" type="number" value="0">
+              <input id="main_children" name="children" type="number" value="0" required>
               <button type=button><span class="visually-hidden">Больше</span></button>
             </span>
           </p>
