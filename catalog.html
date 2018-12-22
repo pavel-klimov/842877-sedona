@@ -27,28 +27,57 @@
       <section class="selecting__form">
         <h2 class="visually-hidden">Фильтрация гостиниц</h2>
         <form action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset>
+          <fieldset class="selecting__infrastructure-select">
             <legend>Инфраструктура:</legend>
-            <ul>
-              <li><label><input type="checkbox" name="infrastructure_pool" checked> Бассейн</label></li>
-              <li><label><input type="checkbox" name="infrastructure_parking"> Парковка</label></li>
-              <li><label><input type="checkbox" name="infrastructure_wifi"> Wi-Fi</label></li>
+            <ul class="selecting__checkbox-group">
+              <li>
+                <input class="visually-hidden selecting__checkbox" type="checkbox" id="infrastructure_pool" name="infrastructure_pool" checked>
+                <label for="infrastructure_pool">Бассейн</label>
+              </li>
+              <li>
+                <input class="visually-hidden selecting__checkbox" type="checkbox" id="infrastructure_parking" name="infrastructure_parking">
+                <label for="infrastructure_parking">Парковка</label>
+              </li>
+              <li>
+                <input class="visually-hidden selecting__checkbox" type="checkbox" id="infrastructure_wifi" name="infrastructure_wifi">
+                <label for="infrastructure_wifi">Wi-Fi</label>
+              </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="selecting__type-select">
             <legend>Тип жилья:</legend>
-            <ul>
-              <li><label><input type="checkbox" name="type_hotel" checked> Гостиница</label></li>
-              <li><label><input type="checkbox" name="type_motel" checked> Мотель</label></li>
-              <li><label><input type="checkbox" name="type_apartments" checked> Апартаменты</label></li>
+            <ul class="selecting__checkbox-group">
+              <li>
+                <input class="visually-hidden selecting__checkbox" type="checkbox" id="type_hotel" name="type_hotel" checked>
+                <label for="type_hotel">Гостиница</label>
+              </li>
+              <li>
+                <input class="visually-hidden selecting__checkbox" type="checkbox" id="type_motel" name="type_motel" checked>
+                <label for="type_motel">Мотель</label>
+              </li>
+              <li>
+                <input class="visually-hidden selecting__checkbox" type="checkbox" id="type_apartments" name="type_apartments" checked>
+                <label for="type_apartments">Апартаменты</label>
+              </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
-            <label>От <input type="number" name="cost_from" value="0"></label>
-            <label>До <input type="number" name="cost_to" value="3000"></label>
-          </fieldset>
-          <button>Показать</button>
+          <div class="selecting__cost-selection">
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+              <div class="price-controls">
+                <label class="price-controls__cost-from">От <input type="number" name="cost_from" value="0"></label>
+                <label class="price-controls__cost-to">До <input type="number" name="cost_to" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle__min"></div>
+                <div class="range-toggle range-toggle__max"></div>
+              </div>
+            </fieldset>
+            <button class="selecting__submit-button" type="submit">Показать</button>
+          </div>
         </form>
       </section>
       <section class="sorting">
@@ -59,13 +88,19 @@
         </div>
         <div class="sorting__type-selector">
           <span>Сортировка:</span>
-          <a href="#" class="sorting__type sorting__type_active">По цене</a>
+          <a class="sorting__type sorting__type_active">По цене</a>
           <a href="#" class="sorting__type">По типу</a>
           <a href="#" class="sorting__type">По рейтингу</a>
         </div>
         <div class="sorting__order-group">
-            <a href="#" class="sorting__order sorting__order_up"><span class="visually-hidden">От меньшего</span></a>
-            <a href="#" class="sorting__order sorting__order_down"><span class="visually-hidden">От большего</span></a>
+            <a href="#" class="sorting__order sorting__order_up">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+              <span class="visually-hidden">От меньшего</span>
+            </a>
+            <a class="sorting__order sorting__order_down">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+              <span class="visually-hidden">От большего</span>
+            </a>
         </div>
       </section>
     </aside>
