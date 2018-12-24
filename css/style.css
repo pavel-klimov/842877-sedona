@@ -597,6 +597,7 @@ input[type="radio"].visually-hidden {
 .social-link {
   list-style: none;
   display: inline-block;
+  vertical-align: baseline;
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
@@ -636,18 +637,6 @@ input[type="radio"].visually-hidden {
 
 .logo-htmlacademy {
   fill: #000000;
-}
-
-.item__icon {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.item__icon_star {
-  background-image: url("../img/star.svg");
 }
 
 .htmlacademy-logo {
@@ -785,9 +774,9 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 29px;
-  vertical-align: top;
   cursor: pointer;
 }
 
@@ -1007,6 +996,7 @@ input[type="radio"].visually-hidden {
 .item__type {
   min-width: 112px;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .item__grade {
