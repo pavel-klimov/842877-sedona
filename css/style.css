@@ -14,16 +14,14 @@ body {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -139,6 +137,7 @@ input[type="radio"].visually-hidden {
   width: 500px;
   margin: 0 auto;
 }
+
 .town-description__header {
   padding: 3px 0 33px;
   line-height: 26px;
@@ -202,10 +201,12 @@ input[type="radio"].visually-hidden {
 .main__card_with-icon img {
   margin: 15px 0 30px;
 }
+
 .main__card .regular-header {
   width: 151px;
   margin: 0 auto;
 }
+
 .main__card-with-picture {
   width: 800px;
   background-color: #dba088;
@@ -218,6 +219,7 @@ input[type="radio"].visually-hidden {
 .for-interested {
   padding-top: 52px;
 }
+
 .for-interested__header {
   font-size: 30px;
   font-weight: 700;
@@ -226,6 +228,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding-bottom: 24px;
 }
+
 .for-interested__text {
   width: 450px;
   margin: 0 auto;
@@ -253,10 +256,12 @@ input[type="radio"].visually-hidden {
   z-index: 2;
   cursor: pointer;
 }
+
 .main__search-button:hover,
 .main__search-button:focus {
   background-color: #604e43;
 }
+
 .main__search-button:active {
   background-color: #503e33;
   color: rgba(255,255,255,0.3)
@@ -267,12 +272,23 @@ input[type="radio"].visually-hidden {
   z-index: 2;
   background: #ffffff;
   left: 50%;
-  transform: translate(-50%, 0px);
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
   width: 458px;
   padding: 0 55px;
   text-align: left;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   overflow: hidden;
+}
+
+@-webkit-keyframes form-move-in {
+  0% {
+    max-height: 0px;
+  }
+
+  100% {
+    max-height: 400px;
+  }
 }
 
 @keyframes form-move-in {
@@ -282,6 +298,16 @@ input[type="radio"].visually-hidden {
 
   100% {
     max-height: 400px;
+  }
+}
+
+@-webkit-keyframes form-move-out {
+  0% {
+    max-height: 400px;
+  }
+
+  100% {
+    max-height: 0px;
   }
 }
 
@@ -296,19 +322,29 @@ input[type="radio"].visually-hidden {
 }
 
 .main__reservation-form_open {
-  animation-duration: 250ms;
-  animation-name: form-move-in;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  animation-direction: alternate;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-name: form-move-in;
+          animation-name: form-move-in;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .main__reservation-form_close {
-  animation-duration: 250ms;
-  animation-name: form-move-out;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  animation-direction: alternate;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-name: form-move-out;
+          animation-name: form-move-out;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .reservation-form {
@@ -372,12 +408,11 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.reservation-form__date-field::-moz-placeholder {
+.reservation-form__date-field:-ms-input-placeholder {
   color: #000000;
-  opacity: 1;
 }
 
-.reservation-form__date-field:-ms-input-placeholder {
+.reservation-form__date-field::-ms-input-placeholder {
   color: #000000;
 }
 
@@ -396,7 +431,8 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   font-weight: 700;
   -moz-appearance: textfield;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .reservation-form__number-field::-webkit-outer-spin-button,
@@ -625,6 +661,7 @@ input[type="radio"].visually-hidden {
   vertical-align: top;
   padding-right: 4px;
 }
+
 .htmlacademy-logo:hover path,
 .htmlacademy-logo:focus path {
   fill: #81b3d2;
@@ -687,7 +724,10 @@ input[type="radio"].visually-hidden {
   display: block;
   padding-left: 40px;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   line-height: 23px;
 }
 
@@ -733,7 +773,8 @@ input[type="radio"].visually-hidden {
   width: 2px;
   height: 22px;
   background: #ffffff;
-  transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
 }
 
 .price-controls__cost-from,
@@ -758,7 +799,8 @@ input[type="radio"].visually-hidden {
   background: none;
   border: none;
   -moz-appearance: textfield;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .price-controls input::-webkit-outer-spin-button,
