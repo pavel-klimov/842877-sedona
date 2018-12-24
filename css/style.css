@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -107,7 +107,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main__welcom-screen {
-  background: #7b90ba url(../img/main__welcome-bg.jpg) center bottom no-repeat;
+  background: #7b90ba url("../img/index-bg.jpg") center bottom no-repeat;
   background-position-y: -83px;
   background-size: 100%;
 }
@@ -125,13 +125,13 @@ input[type="radio"].visually-hidden {
 }
 
 .main__town-description::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: -57px;
   width: 100%;
   height: 59px;
-  background: url(../img/intro-mask.svg) center bottom no-repeat;
+  background: url("../img/intro-mask.svg") center bottom no-repeat;
 }
 
 .town-description__header,
@@ -187,15 +187,15 @@ input[type="radio"].visually-hidden {
 }
 
 .main__card_with-icon_home {
-  background-image: url(../img/icon-1.svg);
+  background-image: url("../img/icon-1.svg");
 }
 
 .main__card_with-icon_food {
-  background-image: url(../img/icon-3.svg);
+  background-image: url("../img/icon-2.svg");
 }
 
 .main__card_with-icon_gift {
-  background-image: url(../img/icon-2.svg);
+  background-image: url("../img/icon-3.svg");
   background-position: center 55px;
 }
 
@@ -458,7 +458,7 @@ input[type="radio"].visually-hidden {
 .reservation-form__utility-button_plus::before,
 .reservation-form__utility-button_plus::after,
 .reservation-form__utility-button_minus::before {
-  content: '';
+  content: "";
   background-color: #a9a9a9;
 }
 
@@ -577,15 +577,15 @@ input[type="radio"].visually-hidden {
 }
 
 .social-link_twitter a {
-  background-image: url('../img/twitter.svg');
+  background-image: url("../img/twitter.svg");
 }
 
 .social-link_facebook a {
-  background-image: url('../img/fb-icon.svg');
+  background-image: url("../img/facebook.svg");
 }
 
 .social-link_youtube a {
-  background-image: url('../img/youtube.svg');
+  background-image: url("../img/youtube.svg");
 }
 
 .social-link a {
@@ -609,7 +609,7 @@ input[type="radio"].visually-hidden {
 }
 
 .item__icon_star {
-  background-image: url(../img//star.svg);
+  background-image: url("../img/star.svg");
 }
 
 .htmlacademy-logo {
@@ -633,7 +633,7 @@ input[type="radio"].visually-hidden {
 }
 
 .selecting__form {
-  background: #5496bd url(../img/filter_background.jpg) center no-repeat;
+  background: #5496bd url("../img/catalog-bg.jpg") center no-repeat;
   color: #ffffff;
   padding: 28px 0 7px 0;
 }
@@ -690,10 +690,11 @@ input[type="radio"].visually-hidden {
 }
 
 .selecting__checkbox:focus + label {
-  text-shadow: 0px 0px 25px #000000,
-    0px 0px 30px #000000,
-    0px 0px 50px #000000,
-    0px 0px 60px #000000;
+  color: #ababab;
+}
+
+.selecting__checkbox:disabled + label {
+  opacity: 0.3;
 }
 
 .selecting__checkbox + label::after {
@@ -703,13 +704,13 @@ input[type="radio"].visually-hidden {
   left: 0px;
   width: 30px;
   height: 23px;
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .selecting__checkbox:checked + label::after {
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .price-controls {
