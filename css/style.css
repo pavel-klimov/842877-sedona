@@ -330,6 +330,7 @@ input[type="radio"].visually-hidden {
   line-height: 38px;
   flex-grow: 1;
   margin-left: 53px;
+  color: #000000;
   cursor: pointer;
 }
 
@@ -525,6 +526,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   background-color: rgba(255,255,255,0.9);
+  color: #000000;
 }
 
 .footer__hashtag {
@@ -843,6 +845,7 @@ input[type="radio"].visually-hidden {
   text-align: left;
   font-size: 21px;
   font-weight: 700;
+  color: #000000;
 }
 
 .sorting__type-selector {
