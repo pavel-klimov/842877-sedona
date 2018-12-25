@@ -6,7 +6,8 @@
 
   var form = document.querySelector('.main__reservation-form');
   var formButton = document.querySelector('.main__search-button');
-  var onFormButtonClick = function () {
+  var onFormButtonClick = function (evt) {
+    evt.preventDefault();
     if(form.classList.contains(CLOSE_CLASS)) {
       form.classList.remove(CLOSE_CLASS);
       form.classList.add(OPEN_CLASS);
@@ -16,5 +17,4 @@
     }
   };
   formButton.addEventListener('click', onFormButtonClick);
-  onFormButtonClick();
 })();

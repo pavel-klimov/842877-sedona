@@ -242,7 +242,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main__search-button {
-  width: 568px;
+  width: 508px;
+  display: inline-block;
+  vertical-align: baseline;
   margin: 0 auto;
   padding: 30px;
   border: none;
@@ -252,6 +254,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #ffffff;
   z-index: 2;
   cursor: pointer;
@@ -952,6 +955,11 @@ input[type="radio"].visually-hidden {
 
 .item__image {
   flex-basis: 135px;
+}
+
+.item__image img {
+  max-width: 100%;
+  height: auto;
 }
 
 .item__description {
