@@ -962,6 +962,16 @@ input[type="radio"].visually-hidden {
   height: auto;
 }
 
+.item__image img:first-child {
+  padding-top: 0;
+}
+
+.item__image img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
 .item__description {
   flex-grow: 1;
   padding-left: 30px;
