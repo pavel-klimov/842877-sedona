@@ -957,11 +957,6 @@ input[type="radio"].visually-hidden {
   flex-basis: 135px;
 }
 
-.item__image img {
-  max-width: 100%;
-  height: auto;
-}
-
 .item__image img:first-child {
   padding-top: 0;
 }
